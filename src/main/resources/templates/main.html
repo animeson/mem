@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"
+          xmlns:th="http://www.thymeleaf.org/">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+<form th:method="POST" th:action="@{/}" th:object="${pass}">
+    <section>
+        <label for="password">Enter password</label>
+        <input  th:field="*{response}" type="password" name="password" id="password">
+
+        <meter max="4" id="password-strength-meter"></meter>
+        <p id="password-strength-text"></p>
+    </section>
+</form>
+</body>
+</html>
