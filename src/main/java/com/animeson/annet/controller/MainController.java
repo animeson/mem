@@ -19,7 +19,7 @@ public class MainController {
 
     @GetMapping("/")
     public String mainPage(@ModelAttribute("pass") ResponseDto responseDto) {
-        return "main";
+        return "index";
     }
 
     @PostMapping("/")
